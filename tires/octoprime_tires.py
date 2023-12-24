@@ -6,7 +6,4 @@ class OctoprimeTires(Tires):
         self.wear_data = wear_data
 
     def needs_service(self):
-        if sum(self.wear_data) >= 3:
-            return True
-        else:
-            return False
+        return sum(self.wear_data) >= 3.0
